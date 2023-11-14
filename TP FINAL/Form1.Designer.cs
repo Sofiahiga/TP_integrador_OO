@@ -31,12 +31,12 @@ namespace TP_FINAL
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.registrate = new System.Windows.Forms.Button();
-            this.fastBurger = new System.Windows.Forms.TextBox();
             this.Home = new System.Windows.Forms.Button();
             this.AboutUs = new System.Windows.Forms.Button();
             this.Menu = new System.Windows.Forms.Button();
             this.Conctacanos = new System.Windows.Forms.Button();
             this.iniciarSesion = new System.Windows.Forms.Button();
+            this.titulo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // registrate
@@ -53,20 +53,6 @@ namespace TP_FINAL
             this.registrate.UseVisualStyleBackColor = false;
             this.registrate.Click += new System.EventHandler(this.button1_Click);
             // 
-            // fastBurger
-            // 
-            this.fastBurger.BackColor = System.Drawing.Color.Black;
-            this.fastBurger.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.fastBurger.Font = new System.Drawing.Font("Verdana", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fastBurger.ForeColor = System.Drawing.Color.White;
-            this.fastBurger.Location = new System.Drawing.Point(47, 170);
-            this.fastBurger.Multiline = true;
-            this.fastBurger.Name = "fastBurger";
-            this.fastBurger.Size = new System.Drawing.Size(373, 216);
-            this.fastBurger.TabIndex = 1;
-            this.fastBurger.Text = "Fast\r\nBurger";
-            this.fastBurger.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // Home
             // 
             this.Home.BackColor = System.Drawing.Color.Transparent;
@@ -76,7 +62,7 @@ namespace TP_FINAL
             this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Home.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Home.ForeColor = System.Drawing.Color.Transparent;
-            this.Home.Location = new System.Drawing.Point(56, 27);
+            this.Home.Location = new System.Drawing.Point(40, 28);
             this.Home.Name = "Home";
             this.Home.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.Home.Size = new System.Drawing.Size(128, 50);
@@ -95,7 +81,7 @@ namespace TP_FINAL
             this.AboutUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AboutUs.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AboutUs.ForeColor = System.Drawing.Color.Transparent;
-            this.AboutUs.Location = new System.Drawing.Point(179, 27);
+            this.AboutUs.Location = new System.Drawing.Point(163, 28);
             this.AboutUs.Name = "AboutUs";
             this.AboutUs.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.AboutUs.Size = new System.Drawing.Size(187, 50);
@@ -114,7 +100,7 @@ namespace TP_FINAL
             this.Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Menu.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Menu.ForeColor = System.Drawing.Color.Transparent;
-            this.Menu.Location = new System.Drawing.Point(361, 27);
+            this.Menu.Location = new System.Drawing.Point(345, 28);
             this.Menu.Name = "Menu";
             this.Menu.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.Menu.Size = new System.Drawing.Size(124, 50);
@@ -133,7 +119,7 @@ namespace TP_FINAL
             this.Conctacanos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Conctacanos.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Conctacanos.ForeColor = System.Drawing.Color.Transparent;
-            this.Conctacanos.Location = new System.Drawing.Point(479, 27);
+            this.Conctacanos.Location = new System.Drawing.Point(463, 28);
             this.Conctacanos.Name = "Conctacanos";
             this.Conctacanos.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.Conctacanos.Size = new System.Drawing.Size(162, 50);
@@ -154,6 +140,23 @@ namespace TP_FINAL
             this.iniciarSesion.TabIndex = 6;
             this.iniciarSesion.Text = "Iniciar Sesión";
             this.iniciarSesion.UseVisualStyleBackColor = false;
+            this.iniciarSesion.Click += new System.EventHandler(this.iniciarSesion_Click);
+            // 
+            // titulo
+            // 
+            this.titulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.titulo.BackColor = System.Drawing.Color.Black;
+            this.titulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.titulo.Font = new System.Drawing.Font("Verdana", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.titulo.ForeColor = System.Drawing.Color.White;
+            this.titulo.Location = new System.Drawing.Point(54, 177);
+            this.titulo.Name = "titulo";
+            this.titulo.Size = new System.Drawing.Size(349, 202);
+            this.titulo.TabIndex = 7;
+            this.titulo.Text = "Fast Burger";
+            this.titulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
@@ -162,29 +165,28 @@ namespace TP_FINAL
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1394, 683);
+            this.Controls.Add(this.titulo);
             this.Controls.Add(this.iniciarSesion);
             this.Controls.Add(this.Conctacanos);
             this.Controls.Add(this.Menu);
             this.Controls.Add(this.AboutUs);
             this.Controls.Add(this.Home);
-            this.Controls.Add(this.fastBurger);
             this.Controls.Add(this.registrate);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button registrate;
-        private System.Windows.Forms.TextBox fastBurger;
         private System.Windows.Forms.Button Home;
         private System.Windows.Forms.Button AboutUs;
         private System.Windows.Forms.Button Menu;
         private System.Windows.Forms.Button Conctacanos;
         private System.Windows.Forms.Button iniciarSesion;
+        private System.Windows.Forms.Label titulo;
     }
 }
 

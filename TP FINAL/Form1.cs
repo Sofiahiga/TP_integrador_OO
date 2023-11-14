@@ -46,5 +46,17 @@ namespace TP_FINAL
         {
 
         }
+
+        private void iniciarSesion_Click(object sender, EventArgs e)
+        {
+            var modalSesion = new modal();
+
+            modalSesion.StartPosition = FormStartPosition.Manual;
+            modalSesion.Location = new Point(
+                this.Location.X + (this.Width - modalSesion.Width) / 2,
+                this.Location.Y + (this.Height - modalSesion.Height) / 2);
+            modalSesion.Show();
+
+        }
     }
 }
