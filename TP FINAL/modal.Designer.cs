@@ -57,10 +57,10 @@ namespace TP_FINAL
             // correoElect
             // 
             this.correoElect.AutoSize = true;
-            this.correoElect.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.correoElect.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.correoElect.Location = new System.Drawing.Point(41, 114);
             this.correoElect.Name = "correoElect";
-            this.correoElect.Size = new System.Drawing.Size(198, 25);
+            this.correoElect.Size = new System.Drawing.Size(165, 24);
             this.correoElect.TabIndex = 3;
             this.correoElect.Text = "Correo Electrónico";
             this.correoElect.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -69,10 +69,10 @@ namespace TP_FINAL
             // contrasenia
             // 
             this.contrasenia.AutoSize = true;
-            this.contrasenia.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.contrasenia.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.contrasenia.Location = new System.Drawing.Point(41, 153);
             this.contrasenia.Name = "contrasenia";
-            this.contrasenia.Size = new System.Drawing.Size(127, 25);
+            this.contrasenia.Size = new System.Drawing.Size(106, 24);
             this.contrasenia.TabIndex = 4;
             this.contrasenia.Text = "Contraseña";
             this.contrasenia.TextAlign = System.Drawing.ContentAlignment.TopCenter;

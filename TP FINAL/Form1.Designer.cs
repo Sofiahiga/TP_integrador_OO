@@ -34,9 +34,9 @@ namespace TP_FINAL
             this.Home = new System.Windows.Forms.Button();
             this.AboutUs = new System.Windows.Forms.Button();
             this.Menu = new System.Windows.Forms.Button();
-            this.Conctacanos = new System.Windows.Forms.Button();
             this.iniciarSesion = new System.Windows.Forms.Button();
             this.titulo = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // registrate
@@ -109,25 +109,6 @@ namespace TP_FINAL
             this.Menu.UseVisualStyleBackColor = false;
             this.Menu.Click += new System.EventHandler(this.Menu_Click);
             // 
-            // Conctacanos
-            // 
-            this.Conctacanos.BackColor = System.Drawing.Color.Transparent;
-            this.Conctacanos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Conctacanos.BackgroundImage")));
-            this.Conctacanos.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Conctacanos.FlatAppearance.BorderSize = 0;
-            this.Conctacanos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.Conctacanos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Conctacanos.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Conctacanos.ForeColor = System.Drawing.Color.Transparent;
-            this.Conctacanos.Location = new System.Drawing.Point(463, 28);
-            this.Conctacanos.Name = "Conctacanos";
-            this.Conctacanos.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.Conctacanos.Size = new System.Drawing.Size(162, 50);
-            this.Conctacanos.TabIndex = 5;
-            this.Conctacanos.Text = "Contáctanos";
-            this.Conctacanos.UseVisualStyleBackColor = false;
-            this.Conctacanos.Click += new System.EventHandler(this.button2_Click_1);
-            // 
             // iniciarSesion
             // 
             this.iniciarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(193)))), ((int)(((byte)(118)))));
@@ -158,6 +139,26 @@ namespace TP_FINAL
             this.titulo.Text = "Fast Burger";
             this.titulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(478, 28);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(257, 50);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Mi carrito";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -165,9 +166,9 @@ namespace TP_FINAL
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1394, 683);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.titulo);
             this.Controls.Add(this.iniciarSesion);
-            this.Controls.Add(this.Conctacanos);
             this.Controls.Add(this.Menu);
             this.Controls.Add(this.AboutUs);
             this.Controls.Add(this.Home);
@@ -184,9 +185,9 @@ namespace TP_FINAL
         private System.Windows.Forms.Button Home;
         private System.Windows.Forms.Button AboutUs;
         private System.Windows.Forms.Button Menu;
-        private System.Windows.Forms.Button Conctacanos;
         private System.Windows.Forms.Button iniciarSesion;
         private System.Windows.Forms.Label titulo;
+        private System.Windows.Forms.Button button1;
     }
 }
 
