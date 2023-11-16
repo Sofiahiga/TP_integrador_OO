@@ -56,6 +56,7 @@ namespace TP_FINAL
             // Home
             // 
             this.Home.BackColor = System.Drawing.Color.Transparent;
+            this.Home.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Home.BackgroundImage")));
             this.Home.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Home.FlatAppearance.BorderSize = 0;
             this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -73,6 +74,7 @@ namespace TP_FINAL
             // AboutUs
             // 
             this.AboutUs.BackColor = System.Drawing.Color.Transparent;
+            this.AboutUs.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AboutUs.BackgroundImage")));
             this.AboutUs.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.AboutUs.FlatAppearance.BorderSize = 0;
             this.AboutUs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -91,6 +93,7 @@ namespace TP_FINAL
             // Menu
             // 
             this.Menu.BackColor = System.Drawing.Color.Transparent;
+            this.Menu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Menu.BackgroundImage")));
             this.Menu.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Menu.FlatAppearance.BorderSize = 0;
             this.Menu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -139,6 +142,7 @@ namespace TP_FINAL
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
