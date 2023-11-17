@@ -56,7 +56,6 @@ namespace TP_FINAL
             // Home
             // 
             this.Home.BackColor = System.Drawing.Color.Transparent;
-            this.Home.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Home.BackgroundImage")));
             this.Home.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Home.FlatAppearance.BorderSize = 0;
             this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -74,7 +73,6 @@ namespace TP_FINAL
             // AboutUs
             // 
             this.AboutUs.BackColor = System.Drawing.Color.Transparent;
-            this.AboutUs.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AboutUs.BackgroundImage")));
             this.AboutUs.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.AboutUs.FlatAppearance.BorderSize = 0;
             this.AboutUs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -93,7 +91,6 @@ namespace TP_FINAL
             // Menu
             // 
             this.Menu.BackColor = System.Drawing.Color.Transparent;
-            this.Menu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Menu.BackgroundImage")));
             this.Menu.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Menu.FlatAppearance.BorderSize = 0;
             this.Menu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -142,21 +139,21 @@ namespace TP_FINAL
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(478, 28);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(257, 50);
+            this.button1.Size = new System.Drawing.Size(120, 50);
             this.button1.TabIndex = 8;
+            this.button1.TabStop = false;
             this.button1.Text = "Mi carrito";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button1.UseVisualStyleBackColor = false;
             // 
             // Form1
