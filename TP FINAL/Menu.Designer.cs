@@ -46,18 +46,22 @@ namespace TP_FINAL
             this.button5 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.burger = new System.Windows.Forms.Button();
+            this.bebidas = new System.Windows.Forms.Button();
+            this.postre = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -133,13 +137,14 @@ namespace TP_FINAL
             this.Home.TabIndex = 9;
             this.Home.Text = "Home";
             this.Home.UseVisualStyleBackColor = false;
+            this.Home.Click += new System.EventHandler(this.Home_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(444, 153);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 127);
+            this.pictureBox1.Size = new System.Drawing.Size(241, 127);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -151,7 +156,7 @@ namespace TP_FINAL
             this.tipo1.ForeColor = System.Drawing.Color.White;
             this.tipo1.Location = new System.Drawing.Point(444, 283);
             this.tipo1.Name = "tipo1";
-            this.tipo1.Size = new System.Drawing.Size(162, 45);
+            this.tipo1.Size = new System.Drawing.Size(241, 45);
             this.tipo1.TabIndex = 14;
             this.tipo1.Text = "Hamburguesa simple con queso $3000";
             this.tipo1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -163,10 +168,9 @@ namespace TP_FINAL
             this.agregarCarrito.ForeColor = System.Drawing.Color.White;
             this.agregarCarrito.Location = new System.Drawing.Point(444, 331);
             this.agregarCarrito.Name = "agregarCarrito";
-            this.agregarCarrito.Size = new System.Drawing.Size(162, 43);
+            this.agregarCarrito.Size = new System.Drawing.Size(241, 43);
             this.agregarCarrito.TabIndex = 15;
             this.agregarCarrito.Text = "Agregar al carrito";
-            this.agregarCarrito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.agregarCarrito.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.agregarCarrito.UseVisualStyleBackColor = false;
             this.agregarCarrito.Click += new System.EventHandler(this.button3_Click);
@@ -178,10 +182,9 @@ namespace TP_FINAL
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(444, 598);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(162, 43);
+            this.button3.Size = new System.Drawing.Size(241, 43);
             this.button3.TabIndex = 18;
             this.button3.Text = "Agregar al carrito";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -192,7 +195,7 @@ namespace TP_FINAL
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(444, 550);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 45);
+            this.label1.Size = new System.Drawing.Size(241, 45);
             this.label1.TabIndex = 17;
             this.label1.Text = "Hamburguesa simple con queso $3000";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -202,7 +205,7 @@ namespace TP_FINAL
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(444, 420);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(162, 127);
+            this.pictureBox2.Size = new System.Drawing.Size(241, 127);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
@@ -212,12 +215,11 @@ namespace TP_FINAL
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(118)))));
             this.button4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(679, 598);
+            this.button4.Location = new System.Drawing.Point(752, 598);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(162, 43);
+            this.button4.Size = new System.Drawing.Size(241, 43);
             this.button4.TabIndex = 24;
             this.button4.Text = "Agregar al carrito";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -226,9 +228,9 @@ namespace TP_FINAL
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(679, 550);
+            this.label2.Location = new System.Drawing.Point(752, 550);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 45);
+            this.label2.Size = new System.Drawing.Size(241, 45);
             this.label2.TabIndex = 23;
             this.label2.Text = "Hamburguesa simple con queso $3000";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -236,9 +238,9 @@ namespace TP_FINAL
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(679, 420);
+            this.pictureBox3.Location = new System.Drawing.Point(752, 420);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(162, 127);
+            this.pictureBox3.Size = new System.Drawing.Size(241, 127);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 22;
             this.pictureBox3.TabStop = false;
@@ -248,12 +250,11 @@ namespace TP_FINAL
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(118)))));
             this.button5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(679, 331);
+            this.button5.Location = new System.Drawing.Point(752, 331);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(162, 43);
+            this.button5.Size = new System.Drawing.Size(241, 43);
             this.button5.TabIndex = 21;
             this.button5.Text = "Agregar al carrito";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button5.UseVisualStyleBackColor = false;
             // 
@@ -262,9 +263,9 @@ namespace TP_FINAL
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(679, 283);
+            this.label3.Location = new System.Drawing.Point(752, 283);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 45);
+            this.label3.Size = new System.Drawing.Size(241, 45);
             this.label3.TabIndex = 20;
             this.label3.Text = "Hamburguesa simple con queso $3000";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -272,84 +273,124 @@ namespace TP_FINAL
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(679, 153);
+            this.pictureBox4.Location = new System.Drawing.Point(752, 153);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(162, 127);
+            this.pictureBox4.Size = new System.Drawing.Size(241, 127);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
             // 
-            // button8
+            // button6
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(118)))));
-            this.button8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(909, 598);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(162, 43);
-            this.button8.TabIndex = 30;
-            this.button8.Text = "Agregar al carrito";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button8.UseVisualStyleBackColor = false;
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(118)))));
+            this.button6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(1058, 598);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(241, 43);
+            this.button6.TabIndex = 30;
+            this.button6.Text = "Agregar al carrito";
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(1058, 550);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(241, 45);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Hamburguesa simple con queso $3000";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(1058, 420);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(241, 127);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 28;
+            this.pictureBox5.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(118)))));
+            this.button7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(1058, 331);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(241, 43);
+            this.button7.TabIndex = 27;
+            this.button7.Text = "Agregar al carrito";
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(1058, 283);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(241, 45);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Hamburguesa simple con queso $3000";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(1058, 153);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(241, 127);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 25;
+            this.pictureBox6.TabStop = false;
             // 
             // label6
             // 
+            this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(909, 550);
+            this.label6.Location = new System.Drawing.Point(146, 153);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(162, 45);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "Hamburguesa simple con queso $3000";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Size = new System.Drawing.Size(112, 28);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "Categorías";
             // 
-            // pictureBox7
+            // burger
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(909, 420);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(162, 127);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 28;
-            this.pictureBox7.TabStop = false;
+            this.burger.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.burger.Location = new System.Drawing.Point(80, 225);
+            this.burger.Name = "burger";
+            this.burger.Size = new System.Drawing.Size(247, 55);
+            this.burger.TabIndex = 32;
+            this.burger.Text = "Hamburguesas";
+            this.burger.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // bebidas
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(118)))));
-            this.button9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(909, 331);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(162, 43);
-            this.button9.TabIndex = 27;
-            this.button9.Text = "Agregar al carrito";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button9.UseVisualStyleBackColor = false;
+            this.bebidas.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bebidas.Location = new System.Drawing.Point(80, 325);
+            this.bebidas.Name = "bebidas";
+            this.bebidas.Size = new System.Drawing.Size(247, 55);
+            this.bebidas.TabIndex = 33;
+            this.bebidas.Text = "Bebidas";
+            this.bebidas.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // postre
             // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(909, 283);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(162, 45);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Hamburguesa simple con queso $3000";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(909, 153);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(162, 127);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 25;
-            this.pictureBox8.TabStop = false;
+            this.postre.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.postre.Location = new System.Drawing.Point(81, 426);
+            this.postre.Name = "postre";
+            this.postre.Size = new System.Drawing.Size(247, 55);
+            this.postre.TabIndex = 34;
+            this.postre.Text = "Postres";
+            this.postre.UseVisualStyleBackColor = true;
             // 
             // Menu
             // 
@@ -357,12 +398,16 @@ namespace TP_FINAL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1394, 683);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.postre);
+            this.Controls.Add(this.bebidas);
+            this.Controls.Add(this.burger);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox3);
@@ -385,9 +430,10 @@ namespace TP_FINAL
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -409,11 +455,15 @@ namespace TP_FINAL
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button burger;
+        private System.Windows.Forms.Button bebidas;
+        private System.Windows.Forms.Button postre;
     }
 }

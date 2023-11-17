@@ -21,5 +21,10 @@ namespace TP_FINAL
         {
 
         }
+
+        private void Home_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

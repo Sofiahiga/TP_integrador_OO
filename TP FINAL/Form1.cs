@@ -44,7 +44,8 @@ namespace TP_FINAL
 
         private void Menu_Click(object sender, EventArgs e)
         {
-
+            var nuevoMenu = new Menu();
+            nuevoMenu.Show();
         }
 
         private void iniciarSesion_Click(object sender, EventArgs e)
